@@ -42,3 +42,7 @@ class queue_2s():
     def check(self):
         # Return the number of elements in the queue
         return len(self.s1) + len(self.s2)
+
+class QueueEmptyError(Exception):
+    def __init__(self, message="Queue is empty"):
+        super().__init__(message)
