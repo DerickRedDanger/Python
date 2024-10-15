@@ -7,6 +7,8 @@ def retry(function):
                 return function(*args, **kwargs)
             except Exception as e:
                 print(f'Exception occurred: {e}')
+
+        print(f'The function failed to run {n_retries} times.')
         return None
     return wrapper
 

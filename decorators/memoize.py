@@ -1,9 +1,7 @@
 def Memoize(function):
     log = {}
     def wrapper(*args):
-        if args in log:
-            result = log[args]
-        else:
+        if args not in log:
             log[args] = function(*args)
         return log[args]
 
