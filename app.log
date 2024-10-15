@@ -1,0 +1,10 @@
+2024-10-15 15:33:42,846 - DEBUG - This is a DEBUG message
+2024-10-15 15:33:42,847 - INFO - This is an INFO message
+2024-10-15 15:33:42,847 - WARNING - This is a WARNING message
+2024-10-15 15:33:42,847 - ERROR - This is an ERROR message
+2024-10-15 15:33:42,847 - CRITICAL - This is a CRITICAL message
+2024-10-15 15:33:42,847 - ERROR - Exception occurred
+Traceback (most recent call last):
+  File "c:\Users\jonma\Documents\GitHub\Python-Exercises\Useful_modules\logging_module\logging_basic.py", line 23, in <module>
+    1 / 0
+ZeroDivisionError: division by zero
