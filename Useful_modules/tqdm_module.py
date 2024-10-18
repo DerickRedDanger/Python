@@ -31,8 +31,10 @@ for i in tqdm(range(10), desc="Outer Loop"):
         time.sleep(0.01)
 
 # 3. Progress bar inside a loop
-pbar = tqdm(total=100)
-for i in range(100):
+loop = range(100)
+leng = len(loop)
+pbar = tqdm(total=leng)
+for i in loop:
     time.sleep(0.1)  # Simulating work
     pbar.update()  # Manually update the progress bar
 
