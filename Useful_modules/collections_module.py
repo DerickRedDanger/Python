@@ -17,6 +17,11 @@ dd = defaultdict(int)
 dd['a'] += 1
 print(f"defaultdict: {dd}")
 
+# returning it to a normal dictionary and getting only the values
+# The slight overhead of converting to a standard dictionary for printing is usually negligible
+print(f"dict: {dict(dd)}")
+
+
 # 2. namedtuple example
 Point = namedtuple('Point', ['x', 'y'])
 p = Point(10, 20)
