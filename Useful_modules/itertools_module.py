@@ -13,19 +13,15 @@ Basic Usage:
 import itertools
 
 # 1. Combinations example
-combinations = list(itertools.combinations([1, 2, 3], 2))
+combinations = list(itertools.combinations([1, 2, 3, 4, 5, 6], 3))
 print(f"Combinations: {combinations}")
 
 # 2. Infinite cycling through a list
 cycle = itertools.cycle([1, 2, 3])
 print(f"Cycle: {next(cycle)}, {next(cycle)}, {next(cycle)}, {next(cycle)}")
 
-"""
-Advanced Usage:
-"""
-
 # 1. Permutations
-perms = list(itertools.permutations([1, 2, 3]))
+perms = list(itertools.permutations([1, 2, 3, 4, 5, 6],3))
 print(f"Permutations: {perms}")
 
 """
